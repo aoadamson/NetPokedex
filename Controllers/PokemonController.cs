@@ -10,21 +10,20 @@ public class PokemonController(IPokedexService pokedexService) : ControllerBase 
 {
     [HttpGet]
     [Route("/getPokemon")]
-    public ActionResult<Pokemon> GetPokemonById(int id)
+    public ActionResult<Pokemon> GetPokemonById(string id)
     {
         return pokedexService.GetPokemonById(id);
     }
 
     [HttpPost]
-    [Route("/PostPokemon")]
+    [Route("/postPokemon")]
     public ActionResult CreatePokemon(Pokemon pokemonToInsert)
     {
         if (pokedexService.PokemonExists(pokemonToInsert.Id))
         {
-            pokedexService.CreatePokemon(pokemonToInsert);
-            return StatusCode(201);
+            return StatusCode(401);
         }
-
-        return StatusCode(401);
+        pokedexService.CreatePokemon(pokemonToInsert);
+        return StatusCode(201);
     }
 }
