@@ -1,7 +1,9 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace Pokedex.Repositories.Models;
 
 public class Pokemon
 {
-    public string Id { get; set; }
-    public string Name { get; set; }
+    [Key] public Guid pokemon_id { get; set; }
+    public string name { get; set; }
 }

@@ -10,5 +10,5 @@ public class AppDbContext : DbContext
     {
     }
 
-    public DbSet<Pokemon> Pokemons { get; set; }
+    public DbSet<Pokemon> pokemondb { get; set; }
 }

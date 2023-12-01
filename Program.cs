@@ -19,8 +19,11 @@ internal class Program
         builder.Services.AddControllers();
         builder.Services.AddSwaggerGen();
         var app = builder.Build();
-
+        
+        app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
         app.MapControllers();
+        app.UseAuthorization();
+        app.UseDeveloperExceptionPage();
         app.UseSwagger();
         app.UseSwaggerUI();
         app.Run();

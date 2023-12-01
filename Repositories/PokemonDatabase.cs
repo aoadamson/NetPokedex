@@ -4,7 +4,7 @@ namespace Pokedex.Repositories;
 
 public interface IPokemonDatabase
 {
-    List<Pokemon?> GetPokemonById(List<string> ids);
+    List<Pokemon?> GetPokemonById(List<Guid> ids);
     Pokemon InsertPokemon(Pokemon pokemonToInsert);
 }
 
@@ -17,13 +17,15 @@ public class PokemonDatabase : IPokemonDatabase
         _db = db;
     }
 
-    public List<Pokemon?> GetPokemonById(List<string> ids)
+    public List<Pokemon?> GetPokemonById(List<Guid> ids)
     {
-        return ids.Select(id => _db.Pokemons.Find(id)).ToList();
+        return ids.Select(id => _db.pokemondb.Find(id)).ToList();
     }
 
     public Pokemon InsertPokemon(Pokemon pokemonToInsert)
     {
-        return _db.Pokemons.Add(pokemonToInsert).Entity;
+        var result =_db.pokemondb.Add(pokemonToInsert).Entity;
+        _db.SaveChanges();
+        return result;
     }
 }
