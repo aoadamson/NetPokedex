@@ -4,8 +4,9 @@ namespace Pokedex.Repositories;
 
 public interface IPokemonDatabase
 {
-    List<Pokemon?> GetPokemonById(List<Guid> ids);
+    List<Pokemon> GetPokemonByName(List<string> names);
     Pokemon InsertPokemon(Pokemon pokemonToInsert);
+    void DeletePokemonByName(string name);
 }
 
 public class PokemonDatabase : IPokemonDatabase
@@ -17,9 +18,12 @@ public class PokemonDatabase : IPokemonDatabase
         _db = db;
     }
 
-    public List<Pokemon?> GetPokemonById(List<Guid> ids)
+    public List<Pokemon> GetPokemonByName(List<string> names)
     {
-        return ids.Select(id => _db.pokemondb.Find(id)).ToList();
+        // Fetch Pokémon by their names
+        return _db.pokemondb
+            .Where(pokemon => names.Contains(pokemon.name))
+            .ToList();
     }
 
     public Pokemon InsertPokemon(Pokemon pokemonToInsert)
@@ -27,5 +31,14 @@ public class PokemonDatabase : IPokemonDatabase
         var result =_db.pokemondb.Add(pokemonToInsert).Entity;
         _db.SaveChanges();
         return result;
+    }
+    
+    public void DeletePokemonByName(string name)
+    {
+        // Find the Pokémon by name
+        var pokemonToDelete = _db.pokemondb.FirstOrDefault(pokemon => pokemon.name == name);
+        if (pokemonToDelete == null) return;
+        _db.pokemondb.Remove(pokemonToDelete);
+        _db.SaveChanges();
     }
 }

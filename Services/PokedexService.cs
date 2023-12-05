@@ -5,9 +5,12 @@ namespace Pokedex.Services;
 
 public interface IPokedexService
 {
-    Pokemon GetPokemonById(Guid id);
-    bool PokemonExists(Guid id);
+    Pokemon GetPokemonByName(string name);
+    bool PokemonExists(string name);
     bool CreatePokemon(Pokemon pokemonToCreate);
+    void DeletePokemon(string name);
+    bool BulkCreatePokemon(List<Pokemon> pokemonToCreate);
+
 }
 
 public class PokedexService : IPokedexService
@@ -19,15 +22,28 @@ public class PokedexService : IPokedexService
         _database = database;
     }
 
-    public Pokemon GetPokemonById(Guid id) => _database.GetPokemonById(new List<Guid> { id }).First();
+    public Pokemon GetPokemonByName(string name) => _database.GetPokemonByName(new List<string> { name }).First();
 
-    public bool PokemonExists(Guid id)
+    public bool PokemonExists(string name)
     {
-        return _database.GetPokemonById(new List<Guid> { id }).Any();
+        return _database.GetPokemonByName(new List<string> { name }).Any();
     }
 
     public bool CreatePokemon(Pokemon pokemonToCreate)
     {
         return _database.InsertPokemon(pokemonToCreate) is not null;
+    }
+
+    public void DeletePokemon(string name)
+    {
+        _database.DeletePokemonByName(name);
+    }
+    public bool BulkCreatePokemon(List<Pokemon> pokemonToCreate)
+    {
+        foreach (var pokemon in pokemonToCreate)
+        {
+            _database.InsertPokemon(pokemon);
+        }
+        return true;
     }
 }
