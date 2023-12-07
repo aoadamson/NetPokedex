@@ -1,0 +1,24 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=06960def_002Dabea_002D480b_002Dbf2d_002D41bf4d7d532d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="PokedexServiceTests #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::BFCDF671-2C67-42FF-834D-8A320EDA1ACF::net8.0::Pokedex.Services.PokedexServiceTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=5068dfb6_002D2827_002D4845_002Db165_002D6c7014142215/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="PokedexServiceTests #4" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::FE86AE58-2C59-40EF-B966-9748164897C2::net8.0::Pokedex.Services.PokedexServiceTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=51b0d01e_002D3622_002D47d0_002Dac5a_002D6bfbc137affe/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from &amp;lt;PokedexTest&amp;gt;" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Project Location="C:\Users\aoada\RiderProjects\Pokedex\PokedexTest" Presentation="&amp;lt;PokedexTest&amp;gt;" /&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=674eb1b3_002D96ae_002D412b_002D96a0_002D19ddef431654/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="PokedexServiceTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::BFCDF671-2C67-42FF-834D-8A320EDA1ACF::net8.0::Pokedex.Services.PokedexServiceTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=99742237_002D9332_002D46d9_002D9edd_002D12e367e0d10a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="PokedexServiceTests #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::BFCDF671-2C67-42FF-834D-8A320EDA1ACF::net8.0::Pokedex.Services.PokedexServiceTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

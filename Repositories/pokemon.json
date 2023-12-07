@@ -1,38 +1,38 @@
 [
   {
-    "name": "Bulbasaur",
-    "type": ["Grass", "Poison"]
+    "pokemon_id": "df013cdd-1b38-4b8b-9b7e-c10224b7836f",
+    "name": "Bulbasaur"
   },
   {
-    "name": "Ivysaur",
-    "type": ["Grass", "Poison"]
+    "pokemon_id": "4d2342fa-c6ef-4b24-8962-f5fd95da424c",
+    "name": "Ivysaur"
   },
   {
-    "name": "Venusaur",
-    "type": ["Grass", "Poison"]
+    "pokemon_id": "fcd45d8e-21ba-4ace-acd9-5f5361369478",
+    "name": "Venusaur"
   },
   {
-    "name": "Charmander",
-    "type": ["Fire"]
+    "pokemon_id": "09049218-4b39-4e18-93b2-8b17960e43fe",
+    "name": "Charmander"
   },
   {
-    "name": "Charmeleon",
-    "type": ["Fire"]
+    "pokemon_id": "eafc596f-cc23-4d45-9ade-f4292b56b36d",
+    "name": "Charmeleon"
   },
   {
-    "name": "Charizard",
-    "type": ["Fire", "Flying"]
+    "pokemon_id": "382566ed-2f68-48fe-b1af-d60bd93c379b",
+    "name": "Charizard"
   },
   {
-    "name": "Squirtle",
-    "type": ["Water"]
+    "pokemon_id": "bd4a6479-ad4a-4e8d-9972-93f96c10ad5e",
+    "name": "Squirtle"
   },
   {
-    "name": "Wartortle",
-    "type": ["Water"]
+    "pokemon_id": "4e95c129-0071-435a-a28f-e1b89c7c3423",
+    "name": "Wartortle"
   },
   {
-    "name": "Blastoise",
-    "type": ["Water"]
+    "pokemon_id": "89c4513a-3e00-41bc-9113-a761887d1518",
+    "name": "Blastoise"
   }
 ]

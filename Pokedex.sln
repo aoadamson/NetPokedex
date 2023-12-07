@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pokedex", "Pokedex.csproj", "{BF3A2B5A-4EC3-4CCB-BC2C-28C4344341B7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokedexTest", "PokedexTest\PokedexTest.csproj", "{FE86AE58-2C59-40EF-B966-9748164897C2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{BF3A2B5A-4EC3-4CCB-BC2C-28C4344341B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF3A2B5A-4EC3-4CCB-BC2C-28C4344341B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF3A2B5A-4EC3-4CCB-BC2C-28C4344341B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE86AE58-2C59-40EF-B966-9748164897C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE86AE58-2C59-40EF-B966-9748164897C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE86AE58-2C59-40EF-B966-9748164897C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE86AE58-2C59-40EF-B966-9748164897C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
